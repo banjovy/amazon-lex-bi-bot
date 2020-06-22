@@ -111,7 +111,7 @@ def refresh_intent_handler(intent_request, session_attributes):
     logger.debug('<<BIBot>> Lex bot = ' + pprint.pformat(response, indent=4)) 
     
     response = lex_models.put_bot(name=REFRESH_BOT,
-                                  description=response['description'],
+                                  #description=response['description'],
                                   intents=response['intents'],
                                   clarificationPrompt=response['clarificationPrompt'],
                                   abortStatement=response['abortStatement'],

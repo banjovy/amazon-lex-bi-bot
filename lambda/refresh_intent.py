@@ -32,7 +32,7 @@ REFRESH_INTENT = 'Compare_Intent'
 REFRESH_BOT = 'BIBot'
 
 logger = logging.getLogger()
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.INFO)
 
 
 def lambda_handler(event, context):
